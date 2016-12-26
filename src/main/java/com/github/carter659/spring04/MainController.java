@@ -37,7 +37,6 @@ public class MainController {
 
 	@PostMapping("/get")
 	public @ResponseBody Object get(String id) {
-		orderDao.findAll();
 		return orderDao.get(id);
 	}
 
